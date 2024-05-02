@@ -19,16 +19,16 @@ class SingleBarCodeAdapter(
      */
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        lateinit var jobLabel: TextView
+        lateinit var value: TextView
         val separator: View = itemView.findViewById(R.id.separator)
 
         /**
          * Show the data in the views
          */
         fun bindView(item: String, position: Int, barcodeClickListener: BarcodeClickListener, hideSeparator: Boolean) {
-            jobLabel = itemView.findViewById(R.id.job_name)
+            value = itemView.findViewById(R.id.barcode_value)
 
-            jobLabel.text = item
+            value.text = item
 
             itemView.setOnClickListener {
                 barcodeClickListener.onItemClick(position, item)

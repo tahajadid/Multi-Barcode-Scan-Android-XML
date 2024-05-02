@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:id="@+id/job_name"
+        android:id="@+id/barcode_value"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:gravity="center"
@@ -27,6 +27,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/job_name" />
+        app:layout_constraintTop_toBottomOf="@+id/barcode_value" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
